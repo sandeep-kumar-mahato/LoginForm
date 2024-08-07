@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #fcebe4;
+    text-align: center;
+}
+
+.left {
+    width: 40%;
+    color: #263238;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.google-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px 20px;
+    border: 1px solid #4285f4;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #4285f4;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    outline: none;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.google-button:hover {
+    background-color: #f1f3f4;
+    border-color: #357ae8;
+}
+
+.google-icon {
+    margin-right: 10px;
+    width: 18px;
+    height: 18px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.input-container .icon {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.input-container input {
+    border: none;
+    outline: none;
+    padding: 10px;
+    flex: 1;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.options label {
+    display: flex;
+    align-items: center;
+}
+
+.options a {
+    color: #fd3d0d;
+    text-decoration: none;
+}
+
+.options a:hover {
+    text-decoration: underline;
+}
+
+.auth-button {
+    background-color: #fd3d0d;
+    color: #263238;
+    border: none;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.auth-button:hover {
+    background-color: #fd3d0d;
+}
+
+.redirect-link {
+    margin: 20px 0;
+}
+
+.right {
+    width: 50%;
+}
+
+.auth-img {
+    width: 70%;
+}

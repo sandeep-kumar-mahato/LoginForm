@@ -10,6 +10,9 @@ const Signup = () => {
 
   return (
     <div className="container">
+      <div className="right">
+        <img src={signupImg} className="auth-img" alt="Signup" />
+      </div>
       <div className="left">
         <h2>SIGN UP</h2>
         <form className="auth-form">
@@ -36,9 +39,6 @@ const Signup = () => {
           <img src={googleIcon} alt="Google" className="google-icon" />
           Continue with Google
         </button>
-      </div>
-      <div className="right">
-        <img src={signupImg} className="auth-img" alt="Signup" />
       </div>
     </div>
   );

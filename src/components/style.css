@@ -14,10 +14,13 @@
     justify-content: space-evenly;
     background-color: #fcebe4;
     text-align: center;
+    opacity: 0;
+    animation: slideIn 1s forwards;
 }
 
+/* Default layout for login and signup */
 .left {
-    width: 40%;
+    width: 50%;
     color: #263238;
     max-width: 400px;
     margin: 0 auto;
@@ -26,13 +29,26 @@
     border-radius: 10px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(20px);
+    animation: zoomIn 0.8s ease-out forwards;
 }
 
+.right {
+    width: 50%;
+}
+
+.auth-img {
+    width: 70%;
+    transform: scale(0.9);
+}
+
+/* Button and input styles */
 .google-button {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
+    max-width: 280px;
     padding: 10px 20px;
     border: 1px solid #4285f4;
     border-radius: 4px;
@@ -41,7 +57,7 @@
     font-size: 16px;
     font-weight: 500;
     cursor: pointer;
-    transition: background-color 0.3s ease, border-color 0.3s ease;
+    transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
     outline: none;
     text-align: center;
     margin: 0 auto;
@@ -50,6 +66,7 @@
 .google-button:hover {
     background-color: #f1f3f4;
     border-color: #357ae8;
+    transform: scale(1.05);
 }
 
 .google-icon {
@@ -76,6 +93,7 @@ h2 {
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 5px;
+    transition: border-color 0.3s ease;
 }
 
 .input-container .icon {
@@ -88,6 +106,11 @@ h2 {
     outline: none;
     padding: 10px;
     flex: 1;
+    transition: box-shadow 0.3s ease;
+}
+
+.input-container input:focus {
+    box-shadow: 0 0 5px rgba(0, 0, 255, 0.5);
 }
 
 .options {
@@ -105,20 +128,22 @@ h2 {
 .options a {
     color: #fd3d0d;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 .options a:hover {
     text-decoration: underline;
+    color: #fd3d0d;
 }
 
 .auth-button {
-    background-color: #fd3d0d;
+    background-color: #ff4415;
     color: #263238;
     border: none;
     padding: 10px;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .auth-button:hover {
@@ -129,12 +154,29 @@ h2 {
     margin: 20px 0;
 }
 
-.right {
-    width: 50%;
+/* Keyframes for Animations */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
-.auth-img {
-    width: 70%;
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
 /* Responsive Design */

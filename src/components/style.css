@@ -115,7 +115,6 @@ h2 {
     background-color: #fd3d0d;
     color: #263238;
     border: none;
-    font-weight: 600;
     padding: 10px;
     border-radius: 5px;
     cursor: pointer;
@@ -136,4 +135,20 @@ h2 {
 
 .auth-img {
     width: 70%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left,
+    .right {
+        width: 90%;
+    }
+
+    .auth-img {
+        display: none;
+    }
 }

@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import signupImg from "../assets/signup.svg";
 import googleIcon from "../assets/google.png";
-
 import "./style.css";
 
 const Signup = () => {
